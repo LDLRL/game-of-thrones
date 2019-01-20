@@ -24,22 +24,54 @@ const showData = (data) => {
      //console.log(element.house);
      
   
-       result = containerRoot.innerHTML += `
-       <div>
-         <div class="card">
-           <div class="box">
-             <div class="img">
-                 <img src="${element.characterImageFull}">
-             </div>
-             <h2>${element.characterName}<br><span>CASA: ${element.houseName}</span></h2>
-             
-           </div>
-         </div>
-       </div>`
-     } 
-   );
-   return result;
+    
+
+
+if (element.houseName === undefined) {
+    result = containerRoot.innerHTML += `
+    <div>
+      <div class="card">
+        <div class="box">
+          <div class="img">
+              <img src="${element.characterImageFull}">
+          </div>
+          <h2>${element.characterName}<br><span>CASA: No Aplica</span></h2>
+         
+        </div>
+      </div>
+    </div>`
+    } else {
+    result = containerRoot.innerHTML += `
+    <div>
+      <div class="card">
+        <div class="box">
+          <div class="img">
+              <img src="${element.characterImageFull}">
+          </div>
+          <h2>${element.characterName}<br><span> CASA: ${element.houseName}</span></h2>
+        
+        </div>
+      </div>
+    </div>` 
+  }
+});
+return result;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 window.onload = showData(data);
 
 
