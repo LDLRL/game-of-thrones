@@ -17,7 +17,7 @@ const selectHouse = document.getElementById('house');
     //console.log(data);
 
     document.getElementById("seasons").addEventListener("click",()=>{
-        document.getElementById("season").style.display="block";
+       
         document.getElementById("root").style.display="none";
        
      
@@ -88,7 +88,6 @@ window.onload = showData(data);
 
 
 /*
-
 //FILTRADO CON EGG
  selectEgg.addEventListener('change', () => {
   let condition = selectEgg.value
@@ -96,7 +95,6 @@ window.onload = showData(data);
   
   // limpio div
   containerRoot.innerHTML = '';
-
   filtered.forEach(element => {
     containerRoot.innerHTML += `
     <div>
@@ -112,8 +110,6 @@ window.onload = showData(data);
     </div>` 
   })
 })
-
-
 //FILTRADO CON TYPE
 selectType.addEventListener('change', () => {
   let condition = selectType.value
@@ -121,7 +117,6 @@ selectType.addEventListener('change', () => {
   
   // limpio div
   containerRoot.innerHTML = '';
-
   filtered.forEach(element => {
     containerRoot.innerHTML += `
     <div>
@@ -137,7 +132,5 @@ selectType.addEventListener('change', () => {
     </div>` 
   })
 })
-
  window.onload = showData(data);
-
  */

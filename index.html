@@ -10,52 +10,36 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-<header></header>
+<header><!-- IMAGEN BACKGROUND EN CSS --></header>
   
  
 <button id="seasons">TEMPORADAS</button>
-
-<section id="season" class="season">
-  <!-- <nav  aria-label="..."> -->
-      <div class="button-group justify-content-center btn">
-        <button id="season1 " class="btn btn-primary" data-value="season1">Temporada 1</button>
-        <button id="season2" class="btn" data-value="season2">Temporada 2</button>
-        <button id="season3" class="btn" data-value="season3">Temporada 3</button>
-        <button id="season4" class="btn" data-value="season4">Temporada 4</button>
-        <button id="season5" class="btn" data-value="season5">Temporada 5</button>
-        <button id="season6" class="btn" data-value="season6">Temporada 6</button>
-        <button id="season7" class="btn" data-value="season7">Temporada 7</button>
-        <button id="season8" class="btn" data-value="season8">Temporada 8</button>
-      </div>
-    <!-- </nav> -->
-    
- </section>
-
   <!-- Primera sección donde se puede filtrar por casa -->
   <section id="container" class="container">
-  
+      
+
+    <div class="col">
+      <div class="form-group">
+      <label for="season">Seleccionar Temporada:</label>
+      <select id="season" class="form-control">
+              <option value = "">Seleccionar Opción</option>
+              <option value="1">Temporada 1</option>
+              <option value="2">Temporada 2</option>
+              <option value="3">Temporada 3</option>
+              <option value="4">Temporada 4</option>
+              <option value="5">Temporada 5</option>
+              <option value="6">Temporada 6</option>
+              <option value="7">Temporada 7</option>
+              <option value="8">Temporada 8</option>
+      </select>
+      </div>
+    </div>
+
+  </section>
   
 
-    <!-- Select con opciones que se manejarán desde el DOM -->
-     <!--
-        <p>Filtrar por casa:</p>
-    <select id="house">
-      <option value="0">Seleccionar...</option>
-      <option value="Gryffindor">Gryffindor</option>
-      <option value="Slytherin">Slytherin</option>
-      <option value="Hufflepuff">Hufflepuff</option>
-      <option value="Ravenclaw">Ravenclaw</option>
-      <option value="season1">Temporada 1</option>
-              <option value="season2">Temporada 2</option>
-              <option value="season3">Temporada 3</option>
-              <option value="season4">Temporada 4</option>
-              <option value="season5">Temporada 5</option>
-              <option value="season6">Temporada 6</option>
-              <option value="season7">Temporada 7</option>
-              <option value="season8">Temporada 8</option>
-    </select>
-  </section>-->
   
+ 
   
     
     <!-- Nuestro contenedor de la información jalada de la DATA -->
@@ -63,7 +47,26 @@
     <section id="rootEpisodes" class="rootEpisodes"></section>
   
     
-    <!-- TEMPLATE DE COMO QUIERO QUE SE VEA -->
+    <footer></footer>
+
+    <!-- Select con opciones que se manejarán desde el DOM -->
+     <!--
+
+      <section id="season" class="season">
+  <nav  aria-label="..."> -->
+   <!-- <div class="button-group justify-content-center btn">
+      <button  class="btn btn-primary" data-value="1">Temporada 1</button>
+      <button class="btn" data-value="2">Temporada 2</button>
+      <button class="btn" data-value="3">Temporada 3</button>
+      <button class="btn" data-value="4">Temporada 4</button>
+      <button class="btn" data-value="5">Temporada 5</button>
+      <button class="btn" data-value="6">Temporada 6</button>
+      <button class="btn" data-value="7">Temporada 7</button>
+      <button class="btn" data-value="8">Temporada 8</button>
+    </div>-->
+  <!-- </nav> -->
+    
+     <!-- TEMPLATE DE COMO QUIERO QUE SE VEA -->
   
     <!--
     <section class="container-fluid">
