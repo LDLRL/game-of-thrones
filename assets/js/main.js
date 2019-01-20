@@ -14,19 +14,31 @@ const selectHouse = document.getElementById('house');
 
 
 //console.log(dataEpisodes);
+    //console.log(data);
+
+    document.getElementById("seasons").addEventListener("click",()=>{
+        document.getElementById("season").style.display="block";
+        document.getElementById("root").style.display="none";
+     
+      //document.getElementById("offset").value ="";
+        //document.getElementById("texto").value ="";
+       // document.getElementById("copyBlock").value ="";
+     
+    })
 
 
+
+
+
+
+
+
+
+    
 const showData = (data) => {
     let result = '';
-    //console.log(DATA)
+
    data.forEach(element => {
-     // element --> DATA[i]
-     //console.log(element.house);
-     
-  
-    
-
-
 if (element.houseName === undefined) {
     result = containerRoot.innerHTML += `
     <div>
@@ -35,8 +47,8 @@ if (element.houseName === undefined) {
           <div class="img">
               <img src="${element.characterImageFull}">
           </div>
-          <h2>${element.characterName}<br><span>CASA: No Aplica</span></h2>
-         
+          <h2>${element.characterName}<br><br><span>CASA: No Aplica</span></h2>
+    
         </div>
       </div>
     </div>`
@@ -48,7 +60,7 @@ if (element.houseName === undefined) {
           <div class="img">
               <img src="${element.characterImageFull}">
           </div>
-          <h2>${element.characterName}<br><span> CASA: ${element.houseName}</span></h2>
+          <h2>${element.characterName}<br><br><span> CASA: ${element.houseName}</span></h2>
         
         </div>
       </div>
