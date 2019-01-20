@@ -829,6 +829,7 @@ const DATA =
        {
           "characterName":"Elia Martell",
           "houseName":"Martell",
+          "characterImageFull":"https://pm1.narvii.com/6340/8e967c1bc411d63cdce10dc845d5f03477d241ee_hq.jpg",
           "royal":true,
           "marriedEngaged":[
              "Rhaegar Targaryen"
@@ -949,6 +950,7 @@ const DATA =
        },
        {
           "characterName":"Great Master #2",
+          "characterImageFull":"https://image.freepik.com/darmowe-ikony/nieznany-symbol-u%C5%BCytkownika_318-54178.jpg",
           "characterLink":"/character/ch0525536/",
           "actors":[
              {
@@ -2453,6 +2455,7 @@ const DATA =
        },
        {
           "characterName":"Othor",
+          "characterImageFull":"https://image.freepik.com/darmowe-ikony/nieznany-symbol-u%C5%BCytkownika_318-54178.jpg",
           "killedBy":[
              "White Walker",
              "Jon Snow"
@@ -2748,6 +2751,7 @@ const DATA =
        {
           "characterName":"Rhaegal",
           "houseName":"Targaryen",
+          "characterImageFull":"https://i.pinimg.com/originals/7a/8b/59/7a8b599e03face37a218608cb8dc8c05.jpg",
           "siblings":[
              "Drogon",
              "Viserion"
@@ -3448,7 +3452,8 @@ const DATA =
        {
           "characterName":"Timett",
           "characterImageThumb":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTM5MjU1NzA1NF5BMl5BanBnXkFtZTcwOTA2Nzk1NQ@@._V1._SX100_SY140_.jpg",
-          "characterImageFull":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTM5MjU1NzA1NF5BMl5BanBnXkFtZTcwOTA2Nzk1NQ@@._V1_.jpg",
+          "characterImageF":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTM5MjU1NzA1NF5BMl5BanBnXkFtZTcwOTA2Nzk1NQ@@._V1_.jpg",
+          "characterImageFull":"https://vignette.wikia.nocookie.net/hieloyfuego/images/3/3c/Timett_hijo_de_Timett_by_Amoka.JPG/revision/latest?cb=20120715203621",
           "characterLink":"/character/ch0305004/",
           "actorName":"Tobias Winter",
           "actorLink":"/name/nm4385245/"

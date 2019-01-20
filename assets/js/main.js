@@ -7,9 +7,9 @@
 
 
 const data = (DATA.characters);
-const dataEpisodes = (EPISODES.episodes);
 
 const containerRoot = document.getElementById('root');
+
 const selectHouse = document.getElementById('house');
 
 
@@ -19,18 +19,13 @@ const selectHouse = document.getElementById('house');
     document.getElementById("seasons").addEventListener("click",()=>{
         document.getElementById("season").style.display="block";
         document.getElementById("root").style.display="none";
+       
      
       //document.getElementById("offset").value ="";
         //document.getElementById("texto").value ="";
        // document.getElementById("copyBlock").value ="";
      
     })
-
-
-
-
-
-
 
 
 
