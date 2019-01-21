@@ -3,39 +3,28 @@
  * Acá va solo el manejo del DOM
  * 
  */
-
-
-
 const data = (DATA.characters);
-
 const containerRoot = document.getElementById('root');
-
 const selectHouse = document.getElementById('house');
 
 
 //console.log(dataEpisodes);
-    //console.log(data);
+//console.log(data);
 
-    document.getElementById("seasons").addEventListener("click",()=>{
-     // document.getElementById("names").style.display="none";
-        document.getElementById("root").style.display="none";
-       
-     
-      //document.getElementById("offset").value ="";
-        //document.getElementById("texto").value ="";
-       // document.getElementById("copyBlock").value ="";
-     
-    })
+document.getElementById("seasons").addEventListener("click", () => {
+    // document.getElementById("names").style.display="none";
+    document.getElementById("root").style.display = "none";
+})
 
 
 
-    
+
 const showData = (data) => {
     let result = '';
 
-   data.forEach(element => {
-if (element.houseName === undefined) {
-    result = containerRoot.innerHTML += `
+    data.forEach(element => {
+        if (element.houseName === undefined) {
+            result = containerRoot.innerHTML += `
     <div>
       <div class="card">
         <div class="box">
@@ -47,8 +36,8 @@ if (element.houseName === undefined) {
         </div>
       </div>
     </div>`
-    } else {
-    result = containerRoot.innerHTML += `
+        } else {
+            result = containerRoot.innerHTML += `
     <div>
       <div class="card">
         <div class="box">
@@ -59,30 +48,16 @@ if (element.houseName === undefined) {
         
         </div>
       </div>
-    </div>` 
-  }
-});
-return result;
+    </div>`
+        }
+    });
+    return result;
 }
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 window.onload = showData(data);
-
-
-
 
 
 

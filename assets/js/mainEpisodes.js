@@ -1,4 +1,3 @@
-
 const dataEpisodes = (EPISODES.episodes);
 const name = document.getElementById('names');
 const containerEpisodes = document.getElementById('rootEpisodes');
@@ -7,40 +6,39 @@ const selectSeason = document.getElementById('season');
 
 
 
-
 //console.log(dataEpisodes);
-    //console.log(data);
+//console.log(data);
 
-    document.getElementById("seasons").addEventListener("click",()=>{
-     document.getElementById("rootEpisodes").style.display="block";
-     document.getElementById("characters").style.display="flex";
-     document.getElementById("container").style.display="block";
-      document.getElementById("season").value ="";
-  
-        //document.getElementById("texto").value ="";
-       // document.getElementById("copyBlock").value ="";
-     
-    })
+document.getElementById("seasons").addEventListener("click", () => {
+    document.getElementById("rootEpisodes").style.display = "block";
+    document.getElementById("characters").style.display = "flex";
+    document.getElementById("container").style.display = "block";
+    document.getElementById("season").value = "";
 
-    document.getElementById("names").addEventListener("click",()=>{
-        document.getElementById("root").style.display="flex";
-        document.getElementById("rootEpisodes").style.display="none";
-        document.getElementById("characters").style.display="none";
-        document.getElementById("container").style.display="none";
- 
-     
-           //document.getElementById("texto").value ="";
-          // document.getElementById("copyBlock").value ="";
-        
-       })
+    //document.getElementById("texto").value ="";
+    // document.getElementById("copyBlock").value ="";
 
-    
+})
 
-    const showEpisodes = (dataEpisodes) => {
-        let result = ''; 
-          
-         dataEpisodes.forEach(element => {
-            result = containerEpisodes.innerHTML += `
+document.getElementById("names").addEventListener("click", () => {
+    document.getElementById("root").style.display = "flex";
+    document.getElementById("rootEpisodes").style.display = "none";
+    document.getElementById("characters").style.display = "none";
+    document.getElementById("container").style.display = "none";
+
+
+    //document.getElementById("texto").value ="";
+    // document.getElementById("copyBlock").value ="";
+
+})
+
+
+
+const showEpisodes = (dataEpisodes) => {
+    let result = '';
+
+    dataEpisodes.forEach(element => {
+        result = containerEpisodes.innerHTML += `
            <div class = "cardEpisodes" >
                <div class = "card-body">
               <span>Título: <h5> "${element.episodeTitle}" </h5></span><br>
@@ -50,27 +48,27 @@ const selectSeason = document.getElementById('season');
                </div>    
            </div>
            `
-        });
-        return result;
-        }
-    
+    });
+    return result;
+}
 
 
 
-        selectSeason.addEventListener('change', () => {
-            //let condition = selectSeasons.value
-            let condition = selectSeason.value 
-            let filtered = filterSeasons(dataEpisodes, condition);
-            //console.log(filtered)
-                    
 
-            // limpio div
-            
-            containerEpisodes.innerHTML = '';
-      
-           
-            filtered.forEach(element => {
-                containerEpisodes.innerHTML += `
+selectSeason.addEventListener('change', () => {
+    //let condition = selectSeasons.value
+    let condition = selectSeason.value
+    let filtered = filterSeasons(dataEpisodes, condition);
+    //console.log(filtered)
+
+
+    // limpio div
+
+    containerEpisodes.innerHTML = '';
+
+
+    filtered.forEach(element => {
+        containerEpisodes.innerHTML += `
                 <div class = "cardEpisodes" >
                     <div class = "card-body">
                    <span>Título: <h5> "${element.episodeTitle}" </h5></span><br>
@@ -80,17 +78,17 @@ const selectSeason = document.getElementById('season');
                     </div>    
                 </div>
                 `
-            })
-            
-        })
+    })
+
+})
 
 
 
 
-    window.onload = showEpisodes(dataEpisodes);
+window.onload = showEpisodes(dataEpisodes);
 
 
-   /* 
+/* 
 
    //const pageItem = document.querySelectorAll(".btn")
  
