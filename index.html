@@ -12,17 +12,25 @@
 <body>
 <header><!-- IMAGEN BACKGROUND EN CSS --></header>
   
- 
-<button id="seasons">TEMPORADAS</button>
-  <!-- Primera sección donde se puede filtrar por casa -->
-  <section id="container" class="container">
-      
+ <section  class=" col episodes">
+   <button id="seasons" class="button-group btn" >VER EPISODIOS POR TEMPORADAS
+     
+   </button></section>
 
-    <div class="col">
+   <section id="characters" class=" col characters">
+      <button id="names" class="button-group btn">VER PERSONAJES 
+        
+      </button>
+    </section>
+
+
+  <!-- sección donde se puede filtrar por temporada -->
+  <section id="container" class="container">
+      <div class="col">
       <div class="form-group">
-      <label for="season">Seleccionar Temporada:</label>
+      <label for="season">SELECCIONAR TEMPORADA</label>
       <select id="season" class="form-control">
-              <option value = "">Seleccionar Opción</option>
+              <option value = "" selected>Seleccionar Opción:</option>
               <option value="1">Temporada 1</option>
               <option value="2">Temporada 2</option>
               <option value="3">Temporada 3</option>
@@ -42,7 +50,7 @@
  
   
     
-    <!-- Nuestro contenedor de la información jalada de la DATA -->
+    <!-- Nuestro contenedor de la información jalada de la DATA. root para personajes. rootEpisodes para episodios-->
     <section id="root" class="container-fluid"></section>
     <section id="rootEpisodes" class="rootEpisodes"></section>
   

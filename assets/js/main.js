@@ -17,7 +17,7 @@ const selectHouse = document.getElementById('house');
     //console.log(data);
 
     document.getElementById("seasons").addEventListener("click",()=>{
-       
+     // document.getElementById("names").style.display="none";
         document.getElementById("root").style.display="none";
        
      

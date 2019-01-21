@@ -1,6 +1,6 @@
 
 const dataEpisodes = (EPISODES.episodes);
-
+const name = document.getElementById('names');
 const containerEpisodes = document.getElementById('rootEpisodes');
 const selectSeason = document.getElementById('season');
 
@@ -13,13 +13,28 @@ const selectSeason = document.getElementById('season');
 
     document.getElementById("seasons").addEventListener("click",()=>{
      document.getElementById("rootEpisodes").style.display="block";
+     document.getElementById("characters").style.display="flex";
      document.getElementById("container").style.display="block";
-     
-      //document.getElementById("offset").value ="";
+      document.getElementById("season").value ="";
+  
         //document.getElementById("texto").value ="";
        // document.getElementById("copyBlock").value ="";
      
     })
+
+    document.getElementById("names").addEventListener("click",()=>{
+        document.getElementById("root").style.display="flex";
+        document.getElementById("rootEpisodes").style.display="none";
+        document.getElementById("characters").style.display="none";
+        document.getElementById("container").style.display="none";
+ 
+     
+           //document.getElementById("texto").value ="";
+          // document.getElementById("copyBlock").value ="";
+        
+       })
+
+    
 
     const showEpisodes = (dataEpisodes) => {
         let result = ''; 
@@ -44,12 +59,16 @@ const selectSeason = document.getElementById('season');
 
         selectSeason.addEventListener('change', () => {
             //let condition = selectSeasons.value
-            let condition = selectSeason.value
+            let condition = selectSeason.value 
             let filtered = filterSeasons(dataEpisodes, condition);
-            console.log(filtered)
+            //console.log(filtered)
+                    
+
             // limpio div
+            
             containerEpisodes.innerHTML = '';
-          
+      
+           
             filtered.forEach(element => {
                 containerEpisodes.innerHTML += `
                 <div class = "cardEpisodes" >
@@ -61,9 +80,8 @@ const selectSeason = document.getElementById('season');
                     </div>    
                 </div>
                 `
-
-
             })
+            
         })
 
 
